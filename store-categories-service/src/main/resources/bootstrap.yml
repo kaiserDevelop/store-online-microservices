@@ -1,0 +1,10 @@
+#Application Name
+spring:
+  application:
+    name: store-categories-service     # This is the name for the remote configuration file
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://localhost:8888  #where the config-service is running
+      fail-fast: true

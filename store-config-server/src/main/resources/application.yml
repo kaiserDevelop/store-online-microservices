@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: store-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kaiserDevelop/store-online-configuration
+          clone-on-start: true
+          default-label: master # This important because set de branch where it'll find the files
+          username: kaiserperro@gmail.com
+          password: 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

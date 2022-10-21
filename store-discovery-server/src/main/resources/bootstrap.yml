@@ -1,0 +1,10 @@
+#Application Name
+spring:
+  application:
+    name: store-discovery-server     # This is the name for the remote configuration file
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://localhost:8888  #where the config-service is running
+      fail-fast: true             #the service will not run if it can't reach the config-service
