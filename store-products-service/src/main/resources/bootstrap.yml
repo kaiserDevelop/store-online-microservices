@@ -8,3 +8,9 @@ spring:
       profile: dev
       uri: http://localhost:8888  #where the config-service is running
       fail-fast: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
