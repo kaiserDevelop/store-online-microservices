@@ -9,15 +9,6 @@ spring:
       uri: http://localhost:8888  #where the config-service is running
       fail-fast: true
 
-    vault:
-      application-name: store-categories-service
-      host: localhost
-      port: '8200'
-      scheme: http
-      uri: http://localhost:8200
-      authentication: TOKEN
-      token: 00000000-0000-0000-0000-000000000000
-
 management:
   endpoints:
     web:
